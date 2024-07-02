@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 function FeatureVideo({poster, aria, src}) {
   return (
     <div className="feature">
-        <video poster={poster} aria-label={aria} muted={true} autoPlay={true} loop={true} type="video/mp4">
+        <video poster={poster} aria-label={aria} muted={true} autoPlay={true} loop={true} type="video/mp4" playsInline={true}>
         <source src={src} type="video/mp4"/>
         </video>
     </div>

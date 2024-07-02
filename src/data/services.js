@@ -26,3 +26,14 @@ export const services = [
 
 // then...
 // square bookings
+
+// mobile problems
+/*
+Video won't play
+Reviews don't work
+Spacing on About Us Page
+Font Size on FAQ
+Featured Card Images
+Max width on Cards
+
+*/
