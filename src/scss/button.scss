@@ -1,0 +1,58 @@
+button.cta-button{
+    background-color: transparent;
+    color:var(--clr-primary-700);
+    padding:0.875rem 1.75rem;
+    margin:0;
+    border:0;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid var(--clr-secondary-300);
+    overflow: hidden;
+
+    &::before{
+        content: '';
+        position: absolute;
+        inset:0;
+        right:-1px;
+        background-color: var(--clr-secondary-300);
+        z-index: -1;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    &:hover{
+        &::before{
+            transform: scaleX(0);
+            transform-origin: right;
+        }
+        p{
+            color:var(--clr-secondary-300);
+        }
+    }
+    
+    & p{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        letter-spacing: 2.6px;
+        font-size: 13px;
+        text-transform: uppercase;
+        color:var(--clr-primary-700);
+        transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+}
+button.inverted{
+    color:var(--clr-secondary-300);
+    border: 1px solid var(--clr-primary-700);
+    &::before{
+        background-color: var(--clr-primary-700);
+    }
+    &:hover{
+        p{
+            color:var(--clr-primary-700);
+        }
+    }
+    & p {
+        color:var(--clr-secondary-300); 
+    }
+}

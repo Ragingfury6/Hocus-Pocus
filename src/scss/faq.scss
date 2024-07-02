@@ -1,0 +1,100 @@
+.faq{
+    margin-block: 8rem 3rem; // please change this :(
+    color:var(--clr-primary-700);
+    background-color: var(--clr-secondary-300);
+    max-width: 1500px;
+    margin-inline: auto;
+    padding:2rem;
+
+    &__title{
+        text-align: center;
+        font-size: 3rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+    }
+
+    &__accordion{
+        margin-block: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        &__item{
+            &__question{
+                display: flex;
+                justify-content: space-between;
+                gap:2rem; // for mobile min spacing
+                align-items: center;
+                font-size: 2rem;
+                padding:2rem;
+                background-color: var(--clr-accent-700);
+                color:var(--clr-secondary-300);
+                cursor: pointer;
+                transition: 300ms ease all;
+                &__button{
+                    background: 0;
+                    padding: 0;
+                    margin:0;
+                    border: 0;
+                    color:currentColor;
+                }
+            }
+            &__question:hover{
+                background-color: hsl(203, 28%, 22%);
+            }
+            &__answer{
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: grid-template-rows 0.5s ease;
+                background-color: var(--clr-accent-700);
+                color:var(--clr-secondary-300);
+                border-top: 1px solid var(--clr-primary-700);
+                padding-inline: 2rem;
+                > p {
+                    padding:0;
+                    overflow: hidden;
+                    transition: padding 0.5s ease;
+                    font-size: 1.25rem;
+                }
+            }
+            &__answer.open{
+                grid-template-rows: 1fr;
+                > p{
+                    padding-block: 2rem;
+                }
+            }
+        }
+    }
+}
+.plusminus{
+    width:1rem;
+    height: 1rem;
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    &::before,&::after{
+        content: '';
+        position: absolute;
+        background-color: var(--clr-secondary-300);
+        transition: 300ms ease all;
+        transform-origin: center;
+    }
+    &::before{
+        width: 1rem;
+        height:2px;
+    }
+    &::after{
+        width: 2px;
+        height:1rem;
+    }
+    &.active{
+        &::before,&::after{
+            transform: rotate(-0.25turn);
+        }
+        &::before{
+            opacity: 0;
+        }
+    }
+}
