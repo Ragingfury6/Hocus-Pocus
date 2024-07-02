@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 // ScrollTrigger.normalizeScroll(true);
-ScrollTrigger.config({ ignoreMobileResize: true });
+// ScrollTrigger.config({ ignoreMobileResize: true });
 
 function Reviews() {
     const container = useRef();
