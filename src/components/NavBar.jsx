@@ -66,8 +66,8 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="nav__menu__link">
-              Contact
+            <Link to="/memberships" className="nav__menu__link">
+              Memberships
             </Link>
           </li>
         </ul>
@@ -114,9 +114,9 @@ function NavBar() {
               </Link>
             </li>
             <li className="mobile-menu__list__item">
-              <Link to="/contact" className="mobile-menu__list__item__link">
+              <Link to="/memberships" className="mobile-menu__list__item__link">
                 <FaChevronRight />
-                <p>Contact</p>
+                <p>Memberships</p>
               </Link>
             </li>
           </ul>

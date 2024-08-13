@@ -1,0 +1,41 @@
+.memberships {
+  margin-block: 9rem 4rem; /* for now */
+  padding: 2rem;
+
+  &__header {
+    text-align: center;
+    &__title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      letter-spacing: 2.6px;
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    &__description {
+      font-size: 1.25rem;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: stretch;
+    width: 75%;
+    margin-inline: auto;
+    margin-top: 8rem;
+    gap: 6rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .memberships {
+    padding: 0rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .memberships {
+    &__content {
+      grid-auto-flow: column;
+      gap: 2rem;
+    }
+  }
+}

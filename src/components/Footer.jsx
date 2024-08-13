@@ -10,11 +10,11 @@ function Footer() {
         <div className="footer__socials">
             <h3 className="footer__socials__header">Socials</h3>
             <div className="footer__socials__links">
-                <a href='#' className="footer__socials__links__link" data-name="Instagram">
+                <a href='https://www.instagram.com/HocusPocusSkinMethod/' target='_blank' className="footer__socials__links__link" data-name="Instagram">
                     <FaInstagram/>
                     <p className="footer__socials__links__link__name">Instagram</p>
                 </a>
-                <a href='#' className="footer__socials__links__link" data-name="Facebook">
+                <a href='https://www.facebook.com/hocuspocusskinmethod/' target='_blank' className="footer__socials__links__link" data-name="Facebook">
                     <FaFacebook/>
                     <p className="footer__socials__links__link__name">Facebook</p>
                 </a>

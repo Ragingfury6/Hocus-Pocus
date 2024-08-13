@@ -8,7 +8,7 @@ import About from './pages/About/About';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Faq from './pages/FAQ/FAQ';
-import Contact from './pages/Contact/Contact.jsx';
+import Memberships from './pages/Memberships/Memberships.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
     element: <><NavBar/><Faq/><Footer/></>
   },
   {
-    path:"/contact",
-    element: <><NavBar/><Contact/><Footer/></>
+    path:"/memberships",
+    element: <><NavBar/><Memberships/><Footer/></>
   }
 ]);
 function App() {

@@ -12,7 +12,7 @@ function Landing() {
       <FeatureVideo poster={videoPoster} aria={"Skincare Highlight"} src={video}/>
         <div className="landing__content">
             <h1 className="landing__content__title">Hocus Pocus<br/>Skin Method</h1>
-            <p className="landing__content__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste tempore culpa!</p>
+            <p className="landing__content__subtitle">Elevate your beauty with personalized skincare treatments tailored just for you</p>
         </div>
         <div className="landing__button">
             <Button/>
