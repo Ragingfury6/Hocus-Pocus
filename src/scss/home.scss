@@ -118,7 +118,7 @@
   }
   &__cards-wrapper {
     display: grid;
-    gap: 5rem;
+    gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     max-width: 90%;
     margin-inline: auto;
@@ -129,7 +129,7 @@
 @container services (width > 1229px) {
   .services__cards-wrapper {
     margin-bottom: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     > .card:not(.card--featured) {
       border-left: unset;
       border-top: 8px solid var(--clr-accent-700);
