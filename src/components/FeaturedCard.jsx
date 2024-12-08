@@ -3,13 +3,14 @@ import Button from "./Button";
 import PropTypes from "prop-types";
 
 function FeaturedCard({ num, data }) {
-    const {name, description, price, image1, image2, image3, pros, tips} = data;
+    const {name, description, price, image1, image2, pros, tips} = data;
   return (
     <div className={`card card--featured`} id={`card${num}`}>
       <div className="card__image-wrapper card__image-wrapper--featured">
         <img src={image1} alt="" />
         <img src={image2} alt="" />
-        <img src={image3} alt="" />
+        <div></div>
+        {/* <img src={image3} alt="" /> */}
       </div>
       <div className="card__content">
         <h4 className="card__content__title">{name}</h4>

@@ -1,6 +1,6 @@
-import TestImage1 from '../../assets/lipblushing.jpg';
-import TestImage2 from '../../assets/microblading.jpg';
-import TestImage3 from '../../assets/facial3.jpg';
+import TestImage1 from '../../assets/male_face_closeup.webp';
+import TestImage3 from '../../assets/microblading.jpg';
+import AboutUsSign from '../../assets/AboutUsSign.jpg';
 import "../../scss/about.scss";
 function AboutContent() {
   return (
@@ -18,7 +18,7 @@ function AboutContent() {
                 <img src={TestImage1} alt="" />
             </div>
             <div className="about__mission__img--centered">
-            <img src={TestImage2} alt="" />
+            <img src={AboutUsSign} alt="" />
             </div>
         </div>
         <div className="about__story">

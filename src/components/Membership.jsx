@@ -1,5 +1,6 @@
 import "../scss/membership.scss";
 import PropTypes from 'prop-types';
+import Button from "./Button";
 function Membership({name, price, children}) {
   return (
     <div className="membership">
@@ -9,6 +10,10 @@ function Membership({name, price, children}) {
       </div>
       <div className="membership__content">
         {children}
+        
+      </div>
+      <div className="membership__content__button-container">
+      <Button label="Purchase Now" inverted={true}/>
       </div>
     </div>
   );
