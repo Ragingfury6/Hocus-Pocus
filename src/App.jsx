@@ -9,6 +9,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Faq from './pages/FAQ/FAQ';
 import Memberships from './pages/Memberships/Memberships.jsx';
+import MedicalInfo from './pages/MedicalInfo/MedicalInfo.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path:"/memberships",
     element: <><NavBar/><Memberships/><Footer/></>
+  },
+  {
+    path:"/medical",
+    element: <><NavBar/><MedicalInfo/><Footer/></>
   }
 ]);
 function App() {

@@ -70,6 +70,11 @@ function NavBar() {
               Memberships
             </Link>
           </li>
+          <li>
+            <Link to="/medical" className="nav__menu__link">
+              Medical Info
+            </Link>
+          </li>
         </ul>
         <button
           className="ham-button"
@@ -117,6 +122,12 @@ function NavBar() {
               <Link to="/memberships" className="mobile-menu__list__item__link">
                 <FaChevronRight />
                 <p>Memberships</p>
+              </Link>
+            </li>
+            <li className="mobile-menu__list__item">
+              <Link to="/medical" className="mobile-menu__list__item__link">
+                <FaChevronRight />
+                <p>Medical Info</p>
               </Link>
             </li>
           </ul>

@@ -1,5 +1,5 @@
-import TestImage1 from '../../assets/male_face_closeup.webp';
-import TestImage3 from '../../assets/microblading.jpg';
+import MaleFace from '../../assets/male_face_closeup.webp';
+import StretchedLogo from '../../assets/aboutusmain.jpg';
 import AboutUsSign from '../../assets/AboutUsSign.jpg';
 import "../../scss/about.scss";
 function AboutContent() {
@@ -15,7 +15,7 @@ function AboutContent() {
 
             </div>
             <div className="about__mission__img">
-                <img src={TestImage1} alt="" />
+                <img src={MaleFace} alt="" />
             </div>
             <div className="about__mission__img--centered">
             <img src={AboutUsSign} alt="" />
@@ -23,7 +23,7 @@ function AboutContent() {
         </div>
         <div className="about__story">
             <div className="about__story__img">
-            <img src={TestImage3} alt="" />
+            <img src={StretchedLogo} alt="" />
             </div>
             <div className="about__story__info">
             <h2 className="about__story__info__title">Our Story</h2>
