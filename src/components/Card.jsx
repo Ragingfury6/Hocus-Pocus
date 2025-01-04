@@ -13,7 +13,12 @@ function Card({num, data}) {
             <h4 className="card__content__title">{name}</h4>
             <p className="card__content__description">{description}</p>
             <div className="card__content__pricing">
-                <p className="card__content__pricing__price">From {price}</p>
+                {price.includes(",") ? (
+                    <p className="card__content__pricing__price">{price.split(",").map((section,idx)=><p key={idx}>{section}</p>)}</p>
+                ) : (
+                <p className="card__content__pricing__price">{price.includes("$") && "From "}{price}</p>
+                )}
+                {/* <p className="card__content__pricing__price">{price.includes("$") && "From "}{price}</p> */}
                 {/* <p className="card__content__pricing__divider">·</p> */}
                 <Button inverted={true}/>
             </div>

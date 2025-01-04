@@ -1,4 +1,4 @@
-import MaleFace from '../../assets/male_face_closeup.webp';
+import EvaBio from "../../assets/evabio.jpg";
 import StretchedLogo from '../../assets/aboutusmain.jpg';
 import AboutUsSign from '../../assets/AboutUsSign.jpg';
 import "../../scss/about.scss";
@@ -15,7 +15,7 @@ function AboutContent() {
 
             </div>
             <div className="about__mission__img">
-                <img src={MaleFace} alt="" />
+                <img src={EvaBio} alt="" />
             </div>
             <div className="about__mission__img--centered">
             <img src={AboutUsSign} alt="" />

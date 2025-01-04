@@ -11,7 +11,7 @@ function Landing() {
     <section className="landing">
       <FeatureVideo poster={videoPoster} aria={"Skincare Highlight"} src={video}/>
         <div className="landing__content">
-            <h1 className="landing__content__title">Hocus Pocus<br/>Skin Method</h1>
+            <h1 className="landing__content__title">Hocus Pocus<br/>S.M.D.</h1>
             <p className="landing__content__subtitle">Elevate your beauty with personalized skincare treatments tailored just for you</p>
         </div>
         <div className="landing__button">

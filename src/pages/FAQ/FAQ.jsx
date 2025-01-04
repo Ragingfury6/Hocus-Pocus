@@ -8,7 +8,6 @@ function Faq() {
   const faq = useContext(FaqContext);
   
   const togglePlus = (idx) => {
-    console.log(idx);
     const newOpen = [...open];
     newOpen[idx] = !newOpen[idx];
     setOpen(newOpen);

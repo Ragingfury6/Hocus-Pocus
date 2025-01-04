@@ -2,6 +2,7 @@ import Review from "../../components/Review";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { reviews } from "../../data/reviews";
 
 import { useRef } from "react";
 
@@ -25,28 +26,13 @@ function Reviews() {
   return (
     <section className="reviews" ref={container}>
        <div className="reviews__column reviews__column--reverse reviews__column--desktop">
-        <Review />
-        <Review />
-        <Review />
-        <Review />
-        <Review />
-        <Review />
+        {reviews.slice(0,6).map((data,idx)=><Review name={data.name} date={data.date} review={data.review} key={idx}/>)}
       </div>
       <div className="reviews__column reviews__column__regular">
-        <Review />
-        <Review />
-        <Review />
-        <Review />
-        <Review />
-        <Review />
+      {reviews.slice(6,12).map((data,idx)=><Review name={data.name} date={data.date} review={data.review} key={idx}/>)}
       </div>
       <div className="reviews__column reviews__column--reverse">
-        <Review />
-        <Review />
-        <Review />
-        <Review />
-        <Review />
-        <Review />
+      {reviews.slice(12,18).map((data,idx)=><Review name={data.name} date={data.date} review={data.review} key={idx}/>)}
       </div>
       {/* <div className="reviews__column reviews__column--reverse"></div> */}
     </section>
