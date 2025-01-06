@@ -72,7 +72,7 @@ function NavBar() {
           </li>
           <li>
             <Link to="/medical" className="nav__menu__link">
-              Medical Info
+              Medical School
             </Link>
           </li>
         </ul>
@@ -127,7 +127,7 @@ function NavBar() {
             <li className="mobile-menu__list__item">
               <Link to="/medical" className="mobile-menu__list__item__link">
                 <FaChevronRight />
-                <p>Medical Info</p>
+                <p>Medical School</p>
               </Link>
             </li>
           </ul>

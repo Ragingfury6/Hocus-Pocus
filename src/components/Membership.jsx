@@ -13,7 +13,7 @@ function Membership({name, price, children}) {
         
       </div>
       <div className="membership__content__button-container">
-      <Button label="Purchase Now" inverted={true}/>
+      <Button label="Purchase Now" inverted fullWidth/>
       </div>
     </div>
   );
