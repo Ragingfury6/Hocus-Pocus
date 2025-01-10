@@ -3,9 +3,10 @@ import Button from './Button';
 import PropTypes from 'prop-types';
 
 function Card({num, data}) {
-    const {name, description, price, image} = data;
+    const {name, description, price, image, sizing} = data;
+    const cardSizing = sizing || 1;
   return (
-    <div className={`card`} id={`card${num}`}>
+    <div className={`card span${cardSizing}`} id={`card${num}`}>
         <div className="card__image-wrapper">
             <img src={image} alt="" />
         </div>

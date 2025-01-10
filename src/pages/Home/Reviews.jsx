@@ -15,7 +15,7 @@ function Reviews() {
     useGSAP(
         () => {
             return gsap.to(`.reviews__column--reverse`, {
-              scrollTrigger: { trigger: `.reviews__column__regular`, start:"top top", end:"bottom bottom", scrub:1},
+              scrollTrigger: { trigger: `.reviews__column__regular`, start:"top top", end:"120% bottom", scrub:1},
               yPercent: 100,
               y:-window.innerHeight,
               duration: 1,
