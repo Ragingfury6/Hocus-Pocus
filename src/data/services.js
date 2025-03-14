@@ -7,8 +7,10 @@ import HydraFacial from '../assets/hydrafacial.webp';
 import EyebrowLashTint from '../assets/EyebrowLashTint.jpg';
 import ChemicalPeels from '../assets/ChemicalPeels.jpg';
 import Facial1 from '../assets/facial1.jpg';
-import Promo1 from '../assets/promo1.jpg';
-import Promo2 from '../assets/promo2.jpg';
+// import Promo1 from '../assets/promo1.jpg';
+// import Promo2 from '../assets/promo2.jpg';
+import PromoA from '../assets/promo_a.jpg';
+import PromoB from '../assets/promo_b.jpg';
 import Microdermabrasion from '../assets/Microdermabrasion.jpg';
 import MicroNeedling from "../assets/microneedling.jpg";
 import MicroBlading  from '../assets/microblading.jpg';
@@ -43,7 +45,7 @@ export const services = [
   {name:"SofWave", description: "This treatment will build collagen, elastin and fibroblast for a younger refreshed look one treatment once a year to maintain can be used on different areas of the body.", price: "$200", featured:false, image:SofWave, sizing:2 },
   {name:"CryoSkin", description: "CryoSlimming uses thermoelectric cooling to perform cryopolysis (freezing of the fat) which causes cell death of subcutaneous fat tissue without damage to the overlying skin.", price: "$350", featured:false, image:CryoSkin},
   {name:"Vivance RF Needling", description: "The Vivance experience is a new treatment approach that combines Microneedling and Radiofrequency energy with a specialized treatment serum and cooling Peptide Mask to provide patients with Superior, Natural-Looking results.", price: "Prices Vary", featured:false, image:RFMicroNeedling},
-  {name:"PromoItalia", description: "The PromoItalia skin treatment is a non-invasive procedure designed to rejuvenate the skin by stimulating collagen production and enhancing skin texture and tone. It utilizes advanced techniques and products to achieve a youthful and radiant complexion.", price:"Prices Vary", image1: Promo2, image2:Promo1, pros:"The PromoItalia skin treatment improves skin texture and tone, giving a smoother and more radiant appearance. It is suitable for various skin types and offers long-lasting results with proper maintenance.", tips: "To maximize and maintain results, follow the recommended aftercare routine. Additionally, stay hydrated and use sun protection.", featured:true}, // done
+  {name:"PromoItalia", description: "The PromoItalia skin treatment is a non-invasive procedure designed to rejuvenate the skin by stimulating collagen production and enhancing skin texture and tone. It utilizes advanced techniques and products to achieve a youthful and radiant complexion.", price:"Prices Vary", image1: PromoA, image2:PromoB, pros:"The PromoItalia skin treatment improves skin texture and tone, giving a smoother and more radiant appearance. It is suitable for various skin types and offers long-lasting results with proper maintenance.", tips: "To maximize and maintain results, follow the recommended aftercare routine. Additionally, stay hydrated and use sun protection.", featured:true}, // done
   {name:"Vitamin B12 Shot", description: "The B12 Shot is a high dose, intramuscular injection of this necessary and important vitamin. This increases energy and metabolism, and enhances neurological health.", price: "$35", featured:false, image:VitaminB12},
   {name:"Carboxy Therapy", description: "Carboxy therapy helps plump the skin, improves elasticity and wrinkles, and assists in getting rid of toxins. It will also help lighten and brighten the skin. Carboxy gel is applied onto the skin followed with an activating fabric masque that contains lemon acid. It will start bubbling and the client will fell heat, tingling, and a prickly sensation.", price: "$375", featured:false, image:Carboxy, sizing: 2},
   {name:"LED Therapy", description: "A serum is placed on the skin and left under the LED light for 20 minutes. Certain frequencies of light reduce fine lines and wrinkles, stimulate collagen production, and increase new tissue growth.", price: "$275", featured:false, image:LEDTherapy},
